@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> <title>yoo !</title>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app>
+
+Name : <input type="text" ng-Model="Name">
+Hello  {{Name}} <br> <br>
+
+
+<table ng-init="persons=['Abc','Cde','Jkl']" border="1">
+<tr>
+ <td ng-repeat="person in persons">{{person}}</td>
+</tr>
+<tr>
+ <td ng-repeat="person in persons">{{person |uppercase }}</td>
+</tr>
+<tr>
+ <td ng-repeat="person in persons">{{person |lowercase }}</td>
+</tr>
+
+</table>
+</body></html>
